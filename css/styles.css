@@ -1,0 +1,508 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+p {
+    color: #787976;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+    text-align: justify;
+}
+
+hr {
+    width: 50%;
+}
+
+h1 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h6 {
+    color: #484a46;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.p-large {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.p-small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+a {
+    color: #b1caf5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5679b6d8;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: ease 1s;
+}
+
+
+.bg-gray {
+    background-color: #fbfbfb;
+}
+
+
+.section-title {
+    color: #153e52;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+}
+
+
+
+
+.form-floating label {
+    margin-left: 0.5rem;
+    color: #72719b;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    transform: scale(0.85) translateY(-.75rem) translateX(.15rem);
+}
+
+.form-floating .form-control {
+    padding-left: 1.25rem;
+}
+
+.form-select {
+    height: calc(3.5rem + 2px);
+    padding-left: 1.25rem;
+    color: #72719b;
+}
+
+.form-floating textarea.form-control {
+    height: 100%;
+}
+
+.form-floating .form-control:hover,
+.form-select:hover {
+    border: 1px solid #a1a1a1;
+}
+
+.form-control-submit-button {
+    display: inline-block;
+    width: 100%;
+    height: 3.625rem;
+    border: 1px solid #153e52;
+    border-radius: 2px;
+    background-color: #153e52;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+    border: 1px solid #153e52;
+    background-color: transparent;
+    color: #153e52;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(#0d4e996c, #051a2d77), url('/images/imgOne.jpg') center center no-repeat;
+    opacity: 0.95;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+nav {
+    margin-bottom: 3em;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.heroImage {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+@media (min-width: 576px) {
+    .heroImage {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 38%;
+    }
+}
+
+
+
+
+
+
+/* Hero */
+button.btn-outline-primary,
+.btn-md {
+    border: 1px solid #3776bd6c;
+    border-radius: 5px;
+    color: #f0f0f0;
+    margin-right: 10px;
+}
+
+button.btn-outline-secondary {
+    border: 1px solid #699fdd48;
+    border-radius: 5px;
+    color: #f0f0f0;
+    width: 50%;
+    margin: 0px;
+}
+
+button.btn-outline-primary:hover,
+button.btn-outline-secondary:hover,
+.btn-md:hover {
+    background-color: #0d4e996c;
+    border: 1px solid #699fdd48;
+    color: #f1f1f1;
+}
+
+.hero button {
+    background-color: rgba(170, 194, 216, 0.2);
+    border: none;
+    width: 50%;
+}
+
+header h2,
+header h4,
+header h5,
+header p {
+    color: #f1f1f1c2;
+}
+
+.hero .container {
+    padding: 2em 0;
+}
+
+.smallScreenSize {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .hero .col-md-7,
+    .hero .col-md-5 {
+        display: none;
+    }
+
+    .col-lg-12.smallScreenSize {
+        display: block;
+    }
+}
+
+
+/* aboutUs */
+.aboutUs {
+    background-color: rgba(170, 194, 216, 0.2);
+    padding: 2em 0;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.bookCall {
+    background-color: rgba(170, 194, 216, 0.2);
+}
+
+.bookCall .container {
+    background: linear-gradient(#6692c457, #03478662), url('/images/andrew-kliatskyi-ZceT2m9wV7w-unsplash.jpg') center center no-repeat;
+    opacity: 0.9;
+    padding: 3em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(146, 138, 138);
+}
+
+.bookCall h3,
+.bookCall p,
+.contactUs h3,
+.contactUs p {
+    color: #f1f1f1;
+}
+
+.bookCall button {
+    background-color: #1e7ae4b6;
+    color: #f1f1f1;
+    max-width: 50%;
+}
+
+
+/* Service */
+
+.service {
+    background-color: rgba(170, 194, 216, 0.2);
+    padding: 2em 0;
+}
+
+.service .col-lg-6 .col-md-6 .col-sm-6 .col-sm-12 {
+    margin: 2em 0;
+}
+
+.service .row {
+    margin: 1em 0;
+}
+
+
+/* Contact Section */
+
+.contactUs {
+    background-color: rgba(170, 194, 216, 0.2);
+    padding: 2em 0;
+}
+
+.contactUs button {
+    background-color: #1e7ae4b6;
+    color: #f1f1f1;
+    width: 50%;
+}
+
+.contactUs ul li i {
+    color: #1e7ae48f;
+    margin-right: 10px;
+}
+
+.contactUs ul li {
+    cursor: pointer;
+}
+
+form div.errorMessage {
+    background-color: rgba(243, 177, 177, 0.30);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    display: none;
+}
+
+form div.approveMessage {
+    background-color: rgba(75, 192, 75, 0.30);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    display: none;
+}
+
+.contactUs.animate .container {
+    animation: myAnim 1s ease-in-out 0s 2 normal forwards;
+}
+
+.contactUs .container {
+    background: linear-gradient(#6692c457, #03478662), url('/images/andrew-kliatskyi-ZceT2m9wV7w-unsplash.jpg') center center no-repeat;
+    opacity: 0.9;
+    padding: 3em 0;
+    box-shadow: 0 0 5px rgb(146, 138, 138);
+    border-radius: 5px;
+    padding: 2em;
+    margin-bottom: 4em;
+}
+
+.contactUs .text-container ul li {
+    margin: .5em 2em 0 0;
+}
+
+
+@keyframes myAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.0115);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Testimonial Section */
+
+.testimonial {
+    background-color: rgba(170, 194, 216, 0.2);
+    padding: 2em 0;
+}
+
+.testimonial img {
+    width: 96px;
+    height: 96px;
+    margin-right: 1em;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    border-radius: 25%;
+}
+
+.testimonial .col-md {
+    margin: 1em;
+}
+
+
+/* Footer */
+
+footer {
+    background: linear-gradient(#0d4e996c, #051a2d77), url('/images/imgOne.jpg') center center no-repeat;
+    background-size: cover;
+    padding-bottom: .5em;
+    padding-top: 2em;
+}
+
+footer hr {
+    width: 100%;
+    height: 4px;
+}
+
+footer h4,
+footer p {
+    color: #f1f1f18a;
+    text-align: center;
+}
+
+.socials li {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: #a5c6eb6c;
+}
+
+.socials li:hover {
+    transform: scale(1.2);
+}
+
+.socials li:hover i {
+    color: #ffffff;
+}
+
+
+
+
+/* CSS for the success popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 25%;
+}
+
+.popup-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Blog CSS */
+
+.blog .d-flex {
+    margin: 4em 0;
+}
+
+.blog .d-flex .text {
+    padding: 0 5em;
+}
+
+.blog .d-flex img {
+    height: 20rem;
+}
